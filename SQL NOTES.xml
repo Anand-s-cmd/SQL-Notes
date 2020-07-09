@@ -1,0 +1,48 @@
+1. DIFFERENCE BETWEEN MYSQL ORACLE MICROSOFT SQL: https://www.youtube.com/watch?v=v4sSid4o4bo
+
+
+mysql was developped by some other development team but 
+now occupied by ORACLEnow ORACLE and mysql are same
+
+microsoft SQL is different
+
+mysql is free open source 
+
+ORACLE and microsoftSQL are not free
+
+2. difference between SQL and
+
+ mysqlhttps://www.youtube.com/watch?v=7TBc5VbCVLk
+ 
+-------------------------------------------------------------------------------------------------------------------                  SQL 														mySQL                                 
+-------------------------------------------------------------------------------------------------------------------
+SQL is a fine language which is used for querying         || mysql is a database software which uses SQL to
+ a data base                                                                    query the database
+			
+			
+PURPOSE:									
+ SQL is used to query and operate on a database system    || mySQL allowas data handling, data modification storage 	 	 													 and deletion operation
+
+USAGE:
+ SQL code and commands are used in various RDBMS systems  ||  mySQL is used as an RDBMS database which  including mySQL												         	can run SQL on top of it
+
+UPDATES:
+ SQL is a fixed language, commands and the code           || mySQL being a software, gets frequent updates 
+	remains same															 nased on the changes
+-----------------------------------------------------------------------------------------------------------------	
+3. SQL is a standard language for storing, manipulating and retrieving data in databases.
+
+Our SQL tutorial will teach you how to use SQL in: MySQL, SQL Server, MS Access, Oracle, Sybase, Informix, Postgres, and other database systems.
+
+QUERIES:
+1. SELECT * FROM Customers WHERE City='Berlin' OR City='München';
+2. SELECT * FROM Customers WHERE Country='Germany' AND City='München';
+3. SELECT * FROM Customers WHERE Country='India';
+4. SELECT * FROM Customers WHERE NOT Country='Germany';
+
+5. SELECT * FROM Customers WHERE Country='India' AND (City='Bangalore' OR City='Hubli');
+6. SELECT * FROM Customers WHERE NOT Country='Pakistan' AND NOT Country='China'
+7. SELECT * FROM Customers WHERE Country='Germany' ORDER BY Rank
+
+8. INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country)
+   VALUES ('Cardinal','Tom B. Erichsen','Skagen 21','Stavanger','4006','India');
