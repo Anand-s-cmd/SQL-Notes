@@ -1,0 +1,100 @@
+1. DIFFERENCE BETWEEN MYSQL ORACLE MICROSOFT SQL: https://www.youtube.com/watch?v=v4sSid4o4bo
+
+
+mysql was developped by some other development team but 
+now occupied by ORACLEnow ORACLE and mysql are same
+
+microsoft SQL is different
+
+mysql is free open source 
+
+ORACLE and microsoftSQL are not free
+
+2. difference between SQL and
+
+ mysqlhttps://www.youtube.com/watch?v=7TBc5VbCVLk
+ 
+-------------------------------------------------------------------------------------------------------------------                  SQL 														mySQL                                 
+-------------------------------------------------------------------------------------------------------------------
+SQL is a fine language which is used for querying         || mysql is a database software which uses SQL to
+ a data base                                                                    query the database
+			
+			
+PURPOSE:									
+ SQL is used to query and operate on a database system    || mySQL allowas data handling, data modification storage 	 	 													 and deletion operation
+
+USAGE:
+ SQL code and commands are used in various RDBMS systems  ||  mySQL is used as an RDBMS database which  including mySQL												         	can run SQL on top of it
+
+UPDATES:
+ SQL is a fixed language, commands and the code           || mySQL being a software, gets frequent updates 
+	remains same															 nased on the changes
+-----------------------------------------------------------------------------------------------------------------	
+3. SQL is a standard language for storing, manipulating and retrieving data in databases.
+
+Our SQL tutorial will teach you how to use SQL in: MySQL, SQL Server, MS Access, Oracle, Sybase, Informix, Postgres, and other database systems.
+
+QUERIES:
+1. SELECT DISTINCT Country FROM Customers;
+1. SELECT * FROM Customers WHERE City='Berlin' OR City='München';
+2. SELECT * FROM Customers WHERE Country='Germany' AND City='München';
+3. SELECT * FROM Customers WHERE Country='India';
+4. SELECT * FROM Customers WHERE NOT Country='Germany';
+
+5. SELECT * FROM Customers WHERE Country='India' AND (City='Bangalore' OR City='Hubli');
+6. SELECT * FROM Customers WHERE NOT Country='Pakistan' AND NOT Country='China'
+
+7. ORDER BY:
+   SELECT * FROM Customers WHERE Country='Germany' ORDER BY Rank
+
+8. INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country)
+   VALUES ('Cardinal','Tom B. Erichsen','Skagen 21','Stavanger','4006','India');
+   
+9. Tip: Always use IS NULL to look for NULL values.
+
+   SELECT CustomerName, Address FROM Customers WHERE Address IS NULL;
+   SELECT CustomerName, Address FROM Customers WHERE Address IS NOT NULL;
+   
+10.UPDATE:
+   UPDATE Customers
+   SET ContactName='ANAND', City='BANGALORE'
+   WHERE CustomerID=1;
+
+
+11. DELETE FROM Customers WHERE CustomerName='Alfreds Futterkiste';
+
+12. TOP: SELECT TOP 3 * FROM Customers;        || SELECT TOP 3 * FROM Customers WHERE Country='Germany';
+    LIMIT: SELECT * FROM Customers LIMIT 3;    || SELECT * FROM Customers WHERE Country='Germany' LIMIT 3;
+	SELECT * FROM Customers WHERE ROWNUM <= 3; || SELECT * FROM Customers WHERE Country='Germany' AND ROWNUM <= 3;
+	SELECT TOP 50 PERCENT * FROM Customers;
+
+14. MIN() & MAX()
+    SELECT MAX(Price) AS LargestPrice FROM Products;
+	SELECT MIN(Price) AS SmallestPrice FROM Products;
+	
+15. COUNT(), AVG() and SUM()
+	SELECT COUNT(ProductID) FROM Products;
+	SELECT AVG(Price) FROM Products;
+	SELECT SUM(Quantity) FROM OrderDetails;
+	
+16. LIKE :
+    SELECT * FROM Customers WHERE CustomerName LIKE '%a';
+
+17. Wildcards	
+    SELECT * FROM Customers WHERE City LIKE '_ondon';
+	
+18. IN
+    SELECT * FROM Customers WHERE Country IN ('Germany', 'France', 'UK');
+19. NOT IN
+    SELECT * FROM Customers WHERE Country NOT IN ('Germany', 'France', 'UK');
+	
+20. BETWEEN
+    SELECT * FROM Products WHERE Price BETWEEN 10 AND 20;
+	
+21. Alias 
+    SELECT CustomerID AS ID, CustomerName AS Customer FROM Customers;
+	SELECT MAX(Price) AS LargestPrice FROM Products;
+        
+	
+	
+CHECK MODEL HYPER PARAMETER TUNING FOR ALL MODELS
