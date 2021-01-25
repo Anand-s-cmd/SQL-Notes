@@ -1,3 +1,42 @@
+Joins in SQL
+1. https://www.w3schools.com/sql/sql_join.asp
+
+		PRIMARY KEY
+1. Cannot accept NULL values.
+2. Only one primary key
+3. Creates clustered index
+
+		UNIQUE KEY
+1. Can accept one NULL value
+2. 	More than one unique key
+3. Creates non-clustered index
+
+		FOREIGN KEY
+1. Foreign key is a field in the table that is Primary key in another table.
+2. Foreign key can accept multiple null value.
+3. Foreign key do not automatically create an index, clustered or non-clustered. You can manually create an index on foreign key.	
+
+
+
+Python DB Connection
+import mysql.connector
+
+mydb = mysql.connector.connect(
+  host="localhost",
+  user="yourusername",
+  password="yourpassword"
+)
+
+mycursor = mydb.cursor()
+
+mycursor.execute("SHOW DATABASES")
+
+for x in mycursor:
+  print(x)
+
+
+
+
 1. DIFFERENCE BETWEEN MYSQL ORACLE MICROSOFT SQL: https://www.youtube.com/watch?v=v4sSid4o4bo
 
 
