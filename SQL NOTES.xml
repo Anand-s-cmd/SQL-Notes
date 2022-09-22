@@ -1,6 +1,16 @@
 Joins in SQL
 1. https://www.w3schools.com/sql/sql_join.asp
 
+Self Join: example
+"SELECT
+  e.FirstName + ' ' + e.LastName Employee
+  ,m.FirstName + ' ' + m.LastName Manager
+ FROM Employee e
+ INNER JOIN Employee m
+	ON m.EmployeeID = e.ManagerID
+ ORDER BY Manager;"
+
+
 		PRIMARY KEY
 1. Cannot accept NULL values.
 2. Only one primary key
